@@ -1,0 +1,17 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "express server",
+  "scripts": {
+    "start": "NODE_ENV=development nodemon ./src/index.js"
+  },
+  "author": "Harry Scheuerle",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4",
+    "natural": "0.6.2"
+  },
+  "devDependencies": {
+    "nodemon": "1.18.5"
+  }
+}

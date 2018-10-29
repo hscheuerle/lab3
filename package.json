@@ -2,17 +2,27 @@
   "name": "lab3",
   "version": "1.0.0",
   "description": "Villanova csc4598 Lab3",
+  "bin": {
+    "setup": "./bin/setup/index.js"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "concurrently 'npm start --prefix client' 'npm start --prefix server'"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hscheuerle/lab3.git"
   },
   "author": "Harry Scheuerle",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/hscheuerle/lab3/issues"
   },
-  "homepage": "https://github.com/hscheuerle/lab3#readme"
+  "homepage": "https://github.com/hscheuerle/lab3#readme",
+  "devDependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "concurrently": "^4.0.1"
+  },
+  "dependencies": {
+    "natural": "^0.6.2"
+  }
 }
